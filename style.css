@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 600px;
+  font-family: sans-serif;
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player1,
+.player2 {
+  display: flex;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 17px;
+}
+p {
+  font-size: 15px;
+}
+
+.player1 > img,
+.player2 > img {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 10%;
+}
+
+.name1 {
+  padding: 0 10px;
+  text-align: left;
+}
+.name2 {
+  text-align: right;
+  padding: 0 10px;
+}
+
+.sachovnice {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  background-image: url(obrazky/sachovnice.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.7rem solid rgb(51, 42, 30);
+  border-radius: 0.3rem;
+}
+
+.figurka {
+  width: 100%;
+  justify-self: center;
+}
+
+.vitez {
+  text-align: center;
+}
+
+button {
+  background-color: rgb(53, 74, 121);
+  color: white;
+  padding: 5px 20px;
+  display: block;
+  margin: auto;
+  border: 1px solid #0a1e3b;
+  border-radius: 5%;
+}
